@@ -1,0 +1,43 @@
+.hero
+    background-image: url('https://source.unsplash.com/8CwoHpZe3qE/720x500')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    top: 0
+    width: 100%
+    padding-top: 150px
+    padding-bottom: 150px
+    .container
+        z-index: 2
+    p
+        max-width: 650px
+        margin: auto
+    .play
+        color: #252525
+        background: #fff
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        display: inline-block
+        i
+            font-size: 50%
+            line-height: 40px
+            padding-left: 2px
+    strong, span
+        font-size: 85%
+        padding-left: 4px
+.hero::before
+    position: absolute
+    content: ''
+    background: #252525
+    opacity: .55
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 1
+@media (min-width: $lg)
+    .hero
+        background-image: url('https://source.unsplash.com/8CwoHpZe3qE/3100x1900')
+        padding-top: 185px
+        padding-bottom: 185px

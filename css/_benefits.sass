@@ -1,0 +1,43 @@
+.benefits
+    background: $color2
+    border-top: 1px solid rgba(0,0,0,.125)
+    border-bottom: 1px solid rgba(0,0,0,.125)
+    padding-top: 90px
+    padding-bottom: 90px
+    .card-container
+        margin-bottom: 1rem
+        .card
+            padding: 2.25rem 1.75rem
+        i
+            font-size: 2.25rem
+            padding-bottom: 2rem
+            color: $color1 !important
+        p
+            font-size: .875rem
+            margin-top: 4px
+        &:last-child
+            margin-bottom: 0
+
+@media (min-width: $md)
+    .benefits
+        padding-top: 110px
+        padding-bottom: 110px
+        .card-container
+            margin-bottom: 2rem
+            &:nth-last-child(2), &:nth-last-child(1)
+                margin-bottom: 0
+            .card
+                padding: 2.75rem
+                transition: all .15s ease-out
+                &:hover
+                    box-shadow: 0 16px 16px rgba(103,110,144,0.05), 0 8px 8px rgba(103,110,144,0.05), 0 4px 4px rgba(103,110,144,0.05), 0 2px 2px rgba(103,110,144,0.05)
+                    transform: scale(1.005, 1.005)
+            i
+                font-size: 2.75rem
+            p
+                font-size: inherit
+                margin-top: 10px
+        .d-none
+            p
+                font-size: inherit
+            

@@ -1,0 +1,25 @@
+.testimonials
+    padding-top: 80px
+    padding-bottom: 80px
+    background-image: url('https://source.unsplash.com/vQBzvWBFhrI/720x600')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    .container
+        z-index: 2
+        position: relative
+.testimonials::before
+    position: absolute
+    content: ''
+    background: #252525
+    opacity: .35
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 1
+
+@media (min-width: $md)
+    .testimonials
+        background-image: url('https://source.unsplash.com/vQBzvWBFhrI/3100x1900')
